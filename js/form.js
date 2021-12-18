@@ -48,6 +48,8 @@ class Form{
             //add code to reset the values of the gameState and the playerCount nodes to 0 in the database
             var playerInfoRed = database.ref('players');
             playerInfoRed.remove();
+            game.update(0)
+            player.updateCount(0)
         });
 
     }
